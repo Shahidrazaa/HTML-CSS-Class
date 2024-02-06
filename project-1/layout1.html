@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    	*{
+    		margin: 0px;
+    		padding: 0px;
+    	}
+
+    	body{
+    		font-family: Roboto;
+    	}
+
+    	header{
+    		width: 100%;
+    		line-height: 10px;
+    		background-color: rgb(47, 88, 205);
+    		
+    	}
+
+    	.head{
+    		width: 80%;
+    		margin: 0px auto;
+    	}
+
+    	.logo{
+    		width: 20%;	
+    		font-size: 20px;
+    		font-weight: 550;
+    		display: inline-block;
+    		text-align: center;
+
+    	}
+
+    	.logo a{
+    		text-decoration: none;
+    		color: white;
+
+    	}
+
+    	nav {
+    		width: 70%;
+    		height: 50px;
+    		text-align: right;
+    		display: inline-block;
+    		
+    	}
+
+    	nav ul{
+    		list-style: none;
+    		text-align: center;
+    	}
+
+    	nav ul li{
+    		display: inline-block;
+    		line-height: 50px;
+    		margin: 0px 15px;
+    	}
+
+    	nav ul li a{
+    		text-decoration: none;
+    		color: white;
+    	}
+
+
+    	#banner{
+    		width: 100%;
+    		height: 450px;
+        background-color: rgb(47, 88, 205);
+    	}
+
+    	.banner_sec{
+    		width: 80%;
+    		margin: 0 auto;
+    	}
+
+    	.banner_cont{
+    		width: 50%;
+        padding: 5px;
+        float: left;
+    	}
+
+      .title_banner{
+        margin: 12% 0 0 12%;
+      }
+
+    	
+    	.title_banner h1{
+    		color: white;
+    		font-size: 40px;
+    		font-weight: 500px;	
+        letter-spacing: 1.5px;
+    	}
+
+      .title_banner p{
+        color: white;
+        margin: 20px 0;
+        line-height: 1.8;
+      }
+
+      .btn{
+        width: 110px;
+        padding: 7px 12px;
+        background-color: rgb(246, 255, 166);
+        border: 2px solid white;
+        border-radius: 5px;
+      }
+
+      .btn a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        
+      }
+
+      .cont_img{
+        width: 40%;
+        margin: 10% auto;
+        float: right;
+      }
+
+      .cont_img img{
+        width: 100%;
+      }
+
+      .clear{
+        clear: both;
+      }
+
+      #about{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(236,249, 255);
+        
+      }
+
+      .about_sec{
+        width: 80%;
+        margin: 40px auto;
+        padding: 5px;
+      }
+
+      .about_cont{
+        margin: 15px;
+      }
+
+      .about_sec h2{
+       color: rgb(47, 88, 205);
+       font-weight: 600;
+       line-height: 1.5;
+       margin-bottom: 2%
+      }
+
+      .about_cont p{
+        width: 100%;
+        line-height: 1.5;
+        word-spacing: 2px;
+      }
+
+      .btn2{
+/*        width: 110px;*/
+        padding: 7px 12px;
+        background-color: rgb(246, 255, 166);
+        border: 2px solid white;
+        border-radius: 5px;
+        margin: 2% auto;
+
+      }
+
+      .btn2 a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        
+      }
+
+
+      .clear{
+        clear: both;
+      }
+
+
+      #product{
+        width: 100%;
+        text-align: center;
+      }
+
+      .product_sec{
+        width: 80%;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: right ;
+      }
+
+      .product_sec h2{
+        color: rgb(47, 88, 205);
+        font-weight: 600;
+       line-height: 1.5;
+       margin: 3%;
+       text-align: left;
+       
+      }
+
+      .card_warp{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+      }
+
+
+      .card h3{
+        color: rgb(47, 88, 205);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .card{
+        width: 28%;
+        margin: 20px;
+        float: left;
+        text-align: center;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        
+      }
+
+      .card img{
+        width: 150px;
+        height: 200px;
+        margin: 10% 10% 10% 20%;
+      }
+
+      .card.first{
+        background-color:rgb(47, 88, 205);
+        border-radius: 10px;
+      }
+
+      .card.first h3{
+        color: white;
+      }
+
+      .card.first p{
+        color: white;
+        margin-top: 12px;
+      }
+
+      .card p{
+        margin-top: 10px;
+        padding: 5px;
+      }
+
+
+      .btn3{
+        padding: 7px 12px;
+        background-color: rgb(246, 255, 166);
+        border: 2px solid white;
+        border-radius: 5px;
+        margin: 10% ;
+      }
+
+      .btn3 a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        
+      }
+
+      .card_btn{
+        margin: 40px;
+        padding: 7px 12px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+
+      .card_btn a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        
+      }
+
+
+      .clear{
+        clear: both;
+      }
+
+
+      #profile{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(236,249, 255);
+      }
+
+      .profile_sec{
+        width: 80%;
+        margin: 40px auto;
+        padding: 5px;
+      }
+
+      .profile_cont{
+        width: 40%;
+        margin:auto;
+      }
+
+      .profile_sec h2{
+       color: rgb(47, 88, 205);
+       font-weight: 600;
+       line-height: 1.5;
+       margin-top: 2%;
+      }
+
+      .profile_sec img{
+        width: 60%;
+      }
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <header>
+  	<div class="head">
+  	<div class="logo">
+  		<a href="#">Logo</a>
+  	</div>
+  	<nav>
+  		<ul>
+  			<li><a href="#">HOME</a></li>
+  			<li><a href="#">ABOUT US</a></li>
+  			<li><a href="#">OUR PRODUCTS</a></li>
+  			<li><a href="#">PROFILE</a></li>
+  		    <li><a href="#">CONTACT US</a></li>
+  		</ul>
+  	</nav>
+      </div>
+  </header>
+
+  <section id="banner">
+  	<div class="banner_sec">
+
+  		<div class="banner_cont">
+  			<div class="title_banner">
+  				<h1>Welcome to Expert System and Services</h1>
+          <p>Incepted in the year 2005,Expert System and Services [ESSTECH] is a remarkable bussiness oraganization immersed in manufacturing and supplying a broad varitey of products comprising</p>
+          <button class="btn"><a href="">Learn More</a></button>
+  			</div>
+  		</div>
+
+  
+      <div class="cont_img">
+        <img src="online.svg">
+      </div>
+
+
+  	</div>
+  </section>
+
+   <div class="clear"></div>
+
+
+  <section id="about">
+    <div class="about_sec">
+      <div class="about_cont">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn2"><a href="">Read More</a></button>
+    </div>
+    </div>
+  </section>
+
+  <div class="clear"></div>
+   
+
+   <section id="product">
+     <div class="product_sec">
+       <h2>Our Products</h2>
+       <div class="card_wrap">
+         <div class="card first">
+           <img src="./images/ups.png">
+           <h3>LUMINOUS UPS </h3>
+           <p>Accerdited amid one of the eminent business</p>
+           <button class="btn3"><a href="#">Contact Now</a></button>
+         </div>
+
+         <div class="card">
+           <img src="./images/invetor.jpg">
+           <h3>LUMINOUS INVERTER</h3>
+           <p>Accerdited amid one of the eminent business</p>
+           <button class="btn3"><a href="#">Contact Now</a></button>
+         </div>
+           
+           <div class="card">
+           <img src="./images/water.jpg ">
+           <h3>USHA WATER COOLER</h3>
+           <p>Accerdited amid one of the eminent business</p>
+           <button class="btn3"><a href="#">Contact Now</a></button>
+         </div>
+           
+            <div class="clear"></div>
+
+           <div class="card">
+           <img src="./images/ups.png">
+            <h3>LUMINOUS UPS 6 KVS</h3>
+           <p>Accerdited amid one of the eminent business</p>
+           <button class="btn3"><a href="#">Contact Now</a></button>
+         </div>
+ 
+          <div class="card">
+           <img src="./images/invetor.jpg">
+            <h3>LUMINOUS INVERTER</h3>
+           <p>Accerdited amid one of the eminent business</p>
+           <button class="btn3"><a href="#">Contact Now</a></button>
+         </div>
+
+         <div class="card">
+           <img src="./images/water.jpg">
+           <h3>USHA WATER COOLER</h3> 
+           <p>Accerdited amid one of the eminent business</p>
+           <button class="btn3"><a href="#">Contact Now</a></button>
+         </div>
+          
+          <div class="clear"></div>
+          
+       </div>
+       <buttonb class="card_btn" ><a href="#">Show All Products</a></button> 
+     </div>
+   </section>
+
+   <div class="clear"></div>
+
+
+   <section id="profile">
+     <div class="profile_sec">
+      <h2>Best Product Selling Rates</h2>
+       <div class="profile_cont">
+          <img src="./images/ups2.png">
+       </div>
+       <div>
+         <ul>
+          <h3>Review & Rating</h3>
+           <li><strong>Sold By :</strong><span> Expert System and Services</span></li>
+           <li><strong>Capacity :</strong><span> 2 KVA</span></li>
+           <li><strong>Brand : </strong><span> ABC</span></li>
+           <li><strong>Phase : </strong><span> Single Phase</span></li>
+           <li><strong>Frequency : </strong><span> 50 HZ+_0.5%HZ</span></li>
+         </ul>
+       </div>
+     </div>
+   </section>
+
+   <div class="clear"></div>
+
+
+
+</body>
+</html>

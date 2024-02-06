@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body{
+	font-family:'Roboto';
+}
+
+.container{
+	width: 100%;
+	height: 700px;
+    background-image: url('./images/form.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+
+.form{
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	top: 130px;
+	border-radius: 20px;
+/*	box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px; */
+	background-color:rgba(34, 166, 153,0.6) ;
+}
+
+.title h3{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	font-weight: 750;
+	position: relative;
+	top: 30px;
+
+}
+
+form{
+position: relative;
+top: 80px;
+left: 50px;
+margin: 20px 0px 15px 0px;
+}
+
+
+form input{
+width: 75%;
+ height: 45px;
+ outline: none;
+ border: 1px solid gray;	
+}
+
+.email{
+/*	margin-top: 20px;*/
+}
+
+.password{
+	margin-top:35px;
+}
+
+.check{
+    width: 200px;
+    
+
+}
+
+.check input{
+	width: 15px;
+	float: left;
+}
+
+.check span{
+	width:100px;
+	color: white;
+	float: left;
+	font-size: 14px;
+	margin: 15px 0px 0px 10px;
+  
+}
+
+.btn {
+  position: relative;
+  top: 100px;
+  right: 20px;
+
+}
+
+.btn a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 550;
+	background-color:rgb(34, 166, 153);
+	padding: 10px 20px;
+	transition: all 1s;
+}
+
+.btn a:hover{
+	border-radius:10px;
+}

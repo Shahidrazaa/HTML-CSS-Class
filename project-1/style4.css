@@ -1,0 +1,97 @@
+.card{
+	width: 500px;
+	height: 495px;
+	background-image: url('images/image10.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 50px auto;
+
+
+
+}
+
+.wrap{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card_inner{
+	position: absolute;
+	left: 0px;
+	transition: all 2s;
+}
+
+.card_inner img{
+	width: 250px;
+	height: 250px;
+}
+
+.card_inner2{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	transition: all 2s;
+}
+
+.card_inner2 img{
+	width: 250px;
+	height: 250px;
+}
+
+.card_inner3{
+	position: absolute;
+	bottom: 0px;
+	transition: all 2s;
+}
+
+.card_inner3 img{
+	width: 250px;
+	height: 250px;
+}
+
+
+.card_inner4{
+	position: absolute;
+	right: 0px;
+	bottom: 1px;
+	transition: all 2s;
+}
+
+.card_inner4 img{
+	width: 250px;
+	height: 250px;
+}
+
+
+ .wrap:hover .card_inner{
+	cursor: pointer;
+	transition: all 2s;
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+}
+
+
+ .wrap:hover .card_inner2{
+	cursor: pointer;
+	transition: all 2s;
+	transform: rotate(90deg);
+	transform-origin: bottom right;
+}
+
+
+ .wrap:hover .card_inner3{
+	cursor: pointer;
+	transition: all 2s;
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+}
+
+
+ .wrap:hover .card_inner4{
+	cursor: pointer;
+	transition: all 2s;
+	transform: rotate(90deg);
+	transform-origin: bottom right;
+}

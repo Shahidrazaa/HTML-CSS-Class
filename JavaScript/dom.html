@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="dom.css">
+<!-- <script type="text/javascript" src="dom.js"></script> -->
+</head>
+<body>
+ 
+<!-- 
+  <div class="container-fluid">
+  	<nav>
+  		<button id="btn2" onclick="hide()">button</button>
+ 	 	  <ul id="list">
+ 	 		<li><a href="#" id="btn" onclick="show()">Log In</a></li>
+ 	 		<li><a href="#">Sign In</a></li>
+ 	 	</ul>
+ 	 </nav>
+    <div id="model">
+    	
+    	<div class="form">
+
+  		<div class="title">
+  			<h3>Login</h3>
+  		</div>
+
+  		<form>
+  			<div class="email">
+  				<input type="email" name="" placeholder="Email">
+  			</div>
+
+  			
+  			<div class="password">
+  				<input type="text" name="" placeholder="Password">
+  			</div>
+
+  			<div class="check">
+  				<input type="checkbox" name="">
+  				<span>Show Password</span>
+  			</div>
+                                                                                    
+  			<div class="btn">
+  				<a href="">Sign in</a>
+  			</div>
+  		</form>
+  	</div>
+    </div>
+  	
+  </div> -->
+
+
+  <div class="container">
+  	<div id="box">
+  		<div class="img">
+        <img src="./images/nice.png">  		
+  		</div>
+  	</div>
+  	
+  </div>
+
+
+  <script type="text/javascript">
+
+//   	let x = document.getElementById('btn');
+//   	let y = document.getElementById('btn2');
+
+//    let model = document.getElementById('model');
+
+
+// function show(){
+// 	model.style.display = 'block';
+// }
+
+  // let x = [1,2,3,45,66];
+
+  // document.write(`${x} <br/>`);
+
+  // x.shift()
+  // document.write(x);
+
+  	// /------remove first value in array-----/
+
+
+
+  	// let x = [2,525,54,655,44];
+
+  	// console.log(x);
+
+  	// x.unshift(33)
+  	// console.log(x);
+
+  	// /-----add value in first in array-----/
+
+   
+
+   // let x = [55,35,552,454,50];
+
+   // console.log(x);
+
+   // x.pop()
+   // console.log(x);
+
+    // /---pop remove value in last---/
+
+
+  	// let x = [255,52,323,55];
+
+  	// console.log(x);
+
+  	// x.push(12);
+
+  	// console.log(x);
+
+  	// /----push add value in last---
+
+ document.getElementById('box').addEventListener("mouseover",function(){
+ 	   this.style.filter = "grayscale(0%)";
+ });
+ document.getElementById('box').addEventListener("mouseout",function(){
+ 	 this.style.filter = "grayscale(100%)";
+ });
+
+
+
+
+  </script>
+</body>
+</html>

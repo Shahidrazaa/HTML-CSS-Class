@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Poppins';
+}
+
+header{
+	width: 100%;
+	background: #000;
+}
+
+.head{
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.head span i{
+	color: #F1C376;
+}
+
+.head a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn_banner{
+	padding: 5px 7px;
+	color: #fff;
+	background-color: #F1C376;
+	border: none;
+	font-size: 14px;
+}
